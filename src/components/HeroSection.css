@@ -1,0 +1,282 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #888;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-button {
+  background: #2ecc71;
+  color: #fff;
+  padding: 1.2rem 3rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+.contact-button:hover {
+  background: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  color: #2ecc71;
+  transform: translateY(-3px);
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  .social-link {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* asdfasdfsadfasd */
+
+.hero-section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+  color: white;
+}
+
+.hero-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.achievement-card, .tech-card, .academic-card {
+  background: #252525;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid #2ecc7030;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #2ecc71;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.metric {
+  text-align: center;
+  padding: 1rem;
+  background: #2ecc7010;
+  border-radius: 10px;
+}
+
+.metric-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.research-highlight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.pub-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: #2ecc7020;
+  color: #2ecc71;
+  border-radius: 20px;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.timeline-visual {
+  position: relative;
+  height: 80px;
+  margin: 2rem 0;
+}
+
+.timeline-bar {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #2ecc7030;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.milestone {
+  position: absolute;
+  top: -15px;
+  padding: 0.5rem 1rem;
+  background: #2ecc70;
+  color: white;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.hitachi { left: 10% }
+.bhumi { left: 30% }
+.avataar { left: 50% }
+.drivezy { left: 70% }
+
+.closing-statement {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #2ecc71;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-visual {
+    display: none;
+  }
+}
