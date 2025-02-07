@@ -28,6 +28,7 @@ const ContactButton = () => {
 
     return (
         <motion.section
+            id="contact"
             className="contact-section"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
