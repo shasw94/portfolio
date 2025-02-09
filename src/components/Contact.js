@@ -1,4 +1,4 @@
-import { HiOutlineMail } from 'react-icons/hi';
+import { HiDownload, HiOutlineMail } from 'react-icons/hi';
 import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 // import './ContactButton.css';
@@ -44,6 +44,28 @@ const ContactButton = () => {
                 <HiOutlineMail className="email-icon" />
                 Contact Me
             </motion.button>
+
+            {/* <button
+                className="download-button"
+                onClick={() => {
+                    // Using fetch for proper PDF handling
+                    fetch('resume.pdf')
+                        .then(response => response.blob())
+                        .then(blob => {
+                            const url = window.URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = 'Shaswat_Pandey_Resume.pdf';
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                            window.URL.revokeObjectURL(url);
+                        });
+                }}
+            >
+                <HiDownload className="download-icon" />
+                Download Resume
+            </button> */}
 
             <motion.div
                 className="social-links"

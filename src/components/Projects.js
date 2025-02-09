@@ -16,7 +16,6 @@ const Projects = () => {
             title: "Multi-agent LLM System",
             description: "Developed containerized multi-LLM agent system for software development, enhancing MetaGPT benchmarks",
             tech: ["Python", "LLM", "Docker", "Multi-agent Systems"],
-            link: "#"  // Add actual link if available
         },
         {
             title: "Flight Delay Prediction",
@@ -45,7 +44,7 @@ const Projects = () => {
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
                     >
-                        <div className="card-header">
+                        <div className="card-header justify-evenly">
                             <FaCode className="project-icon" />
                             <h3>{project.title}</h3>
                         </div>
@@ -64,7 +63,7 @@ const Projects = () => {
                         <div className="project-links">
                             {project.notebook && (
                                 <a
-                                    href={`${project.link}/blob/main/emotion_classification.ipynb`}
+                                    href={`${project.link}/blob/main/main%20final.ipynb`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="notebook-link"
@@ -78,7 +77,7 @@ const Projects = () => {
                                 </a>
                             )}
 
-                            <a
+                            {project.link && !project.notebook && (<a
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -86,7 +85,7 @@ const Projects = () => {
                             >
                                 <FaGithub />
                                 View on GitHub
-                            </a>
+                            </a>)}
                         </div>
                     </motion.div>
                 ))}

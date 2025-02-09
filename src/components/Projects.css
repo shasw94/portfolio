@@ -29,6 +29,10 @@
   .project-card:hover {
     transform: translateY(-5px);
   }
+
+  .justify-evenly{
+    justify-content: space-evenly;
+  }
   
   .card-header {
     display: flex;

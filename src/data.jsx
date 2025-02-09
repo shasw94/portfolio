@@ -41,13 +41,11 @@ export const education = [
       projects: [
         {
           title: "Multi-agent LLM System",
-          description: "Developed containerized LLM system using multiple base models, improved MetaGPT framework performance",
-          link: "#"
+          description: "Developed containerized LLM system using multiple base models, improved MetaGPT framework performance"
         },
         {
           title: "Tweet Emotion Classification",
-          description: "Built pipeline with GLoVE embeddings & Bi-LSTM layers (94% accuracy)",
-          link: "#"
+          description: "Built pipeline with GLoVE embeddings & Bi-LSTM layers (94% accuracy)"
         },
         {
           title: "Flight Delay Prediction",
